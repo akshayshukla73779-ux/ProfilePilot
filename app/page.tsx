@@ -54,7 +54,117 @@ export default function Home() {
 
       <div className="relative z-10">
         <Navbar />
+      {/* Hero Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
 
+        <div
+          className="
+            relative overflow-hidden
+            rounded-3xl
+            border border-white/10
+            bg-card/40
+            backdrop-blur-xl
+            p-10 md:p-14
+            shadow-2xl
+          "
+        >
+
+          {/* Glow */}
+          <div
+            className="
+              absolute top-0 right-0
+              h-[300px] w-[300px]
+              bg-cyan-500/20
+              blur-[140px]
+            "
+          />
+
+          <div className="relative z-10">
+
+            <div
+              className="
+              inline-flex items-center gap-2
+              rounded-full
+              border border-blue-500/20
+              bg-blue-500/10
+              px-4 py-2
+              mb-6
+              "
+            >
+              ✨ NEW
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+
+              Meet
+
+              <span
+                className="
+                bg-gradient-to-r
+                from-blue-400
+                via-cyan-400
+                to-purple-500
+                bg-clip-text
+                text-transparent
+                "
+              >
+                {" "}AI Job Application Copilot
+              </span>
+
+            </h1>
+
+            <p className="text-muted-foreground text-lg leading-8 max-w-3xl mb-10">
+
+              Upload your resume and compare it with any job description.
+
+              Receive ATS scores, interview probability, recruiter insights,
+              red flags, missing keywords and AI-powered resume rewrites.
+
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-10">
+
+              <div className="rounded-2xl border border-green-500/20 bg-green-500/10 p-5">
+                📊 ATS Score & Interview Probability
+              </div>
+
+              <div className="rounded-2xl border border-cyan-500/20 bg-cyan-500/10 p-5">
+                👔 Recruiter's Perspective
+              </div>
+
+              <div className="rounded-2xl border border-red-500/20 bg-red-500/10 p-5">
+                🚨 Red Flags & Missing Keywords
+              </div>
+
+              <div className="rounded-2xl border border-purple-500/20 bg-purple-500/10 p-5">
+                ✨ AI Resume Rewrite
+              </div>
+
+            </div>
+
+            <Link href="/copilot">
+
+              <Button
+                className="
+                h-12 px-8
+                bg-gradient-to-r
+                from-blue-500
+                to-purple-600
+                hover:scale-105
+                transition-all duration-300
+                shadow-[0_0_30px_rgba(59,130,246,0.35)]
+                "
+              >
+                Try AI Copilot →
+              </Button>
+
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
         <main className="flex-1">
           {/* Hero Section */}
           <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">

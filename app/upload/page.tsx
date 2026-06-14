@@ -408,7 +408,7 @@ export default function UploadPage() {
                 <div className="flex items-start gap-6">
 
                   <img
-                    src={linkedinProfile.avatar}
+                    src={linkedinProfile.photo}
                     alt="Profile"
                     className="w-24 h-24 rounded-full border border-border object-cover"
                   />
@@ -416,24 +416,24 @@ export default function UploadPage() {
                   <div className="flex-1">
 
                     <h2 className="text-2xl font-bold text-foreground mb-2">
-                      {linkedinProfile.name}
+                      {linkedinProfile.firstName} {linkedinProfile.lastName}
                     </h2>
 
                     <p className="text-muted-foreground mb-2">
-                      {linkedinProfile.position}
+                      {linkedinProfile.headline}
                     </p>
 
                     <p className="text-sm text-muted-foreground mb-4">
-                      {linkedinProfile.city}
+                      {linkedinProfile.location?.linkedinText}
                     </p>
 
                     <div className="flex gap-6 text-sm text-muted-foreground mb-6">
                       <span>
-                        Followers: {linkedinProfile.followers}
+                        Followers: {linkedinProfile.followerCount?.toLocaleString()}
                       </span>
 
                       <span>
-                        Connections: {linkedinProfile.connections}
+                        Connections: {linkedinProfile.connectionsCount}
                       </span>
                     </div>
 
